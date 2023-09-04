@@ -1,0 +1,14 @@
+figcaption {
+  float: right;
+}
+
+/* grid for footer at the bottom */
+.grid-area {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.footer {
+  justify-self: center;
+}
