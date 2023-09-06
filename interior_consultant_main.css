@@ -1,3 +1,8 @@
+body {
+  background: #181719;
+  color: #fff;
+}
+
 figcaption {
   float: right;
 }
@@ -11,4 +16,11 @@ figcaption {
 
 .footer {
   justify-self: center;
+}
+
+/* local navigation as a flexbox */
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 5.4rem;
 }
