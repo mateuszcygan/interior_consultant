@@ -20,3 +20,36 @@ ul {
   flex-direction: row;
   gap: 5.4rem;
 }
+
+/* elements form description as a flexbox */
+.description {
+  display: flex;
+  flex-direction: column;
+  border: solid 3px purple;
+  width: 410px;
+}
+
+/* grid for main content (without footer) */
+#logo {
+  grid-area: logo;
+}
+
+ul {
+  grid-area: navigation;
+  justify-self: end;
+}
+
+.description {
+  grid-area: description;
+}
+
+.overlap {
+  grid-area: photo;
+}
+
+.main-content {
+  display: grid;
+  grid-template:
+    "logo navigation" min-content
+    "description photo" min-content / 39rem 1fr;
+}
