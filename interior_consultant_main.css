@@ -39,6 +39,12 @@ figure img {
 figcaption h3 {
   margin-top: 1.44rem;
   margin-bottom: 0.5rem;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 #profession {
