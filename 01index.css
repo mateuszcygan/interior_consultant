@@ -36,17 +36,6 @@ figure img {
   margin: 1.13rem 1.19rem 1.56rem 1.94rem;
 }
 
-figcaption h3 {
-  margin-top: 1.44rem;
-  margin-bottom: 0.5rem;
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
 #profession {
   margin: 0;
   padding: 0;
@@ -80,15 +69,4 @@ figcaption h3 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
-
-/** div with designer photo - grid container **/
-#designer {
-  width: 25.625rem;
-  height: 11.8125rem;
-  background-color: rebeccapurple;
-  display: grid;
-  grid-template:
-    "figure" min-content
-    "text" min-content / 1fr;
 }
