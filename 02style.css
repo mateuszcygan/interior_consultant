@@ -29,6 +29,17 @@ body {
 username {
   font-weight: bold;
   text-decoration-line: underline;
+  text-decoration-color: white;
+}
+
+li a {
+  color: white;
+  transition: all 0.4s;
+}
+
+/* effect after hovering over elements from navigation bar */
+li a:hover {
+  color: rgb(181, 181, 181);
 }
 
 /* elements form description as a flexbox */
@@ -93,6 +104,12 @@ a {
 #home {
   font-weight: 700;
   border-bottom: solid 0.125rem white;
+  transition: all 0.4s;
+}
+
+/* color of bottom border changed after hovering over "Home" */
+#home:hover {
+  border-color: rgb(181, 181, 181);
 }
 
 li {
