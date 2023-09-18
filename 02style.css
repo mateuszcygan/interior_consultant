@@ -1,6 +1,6 @@
 body {
   background: #181719;
-  color: #fff;
+  color: #ffffff;
 }
 
 * {
@@ -9,8 +9,6 @@ body {
 }
 
 #x {
-  width: 1.4rem;
-  height: 1.4rem;
   content: "\d7";
   display: none;
 }

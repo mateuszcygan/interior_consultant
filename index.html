@@ -27,13 +27,13 @@
     />
   </head>
   <body>
-    <div id="x"></div>
     <div class="grid-area">
       <div class="main-content">
         <p id="logo">This interior</p>
         <div class="topnav">
-          <nav>
+          <nav id="navX">
             <ul role="list" id="myLinks">
+              <div id="x" onclick="displayMobilePage()"></div>
               <li>
                 <a aria-current="page" id="home" href="index.html">Home</a>
               </li>
@@ -49,7 +49,11 @@
             </ul>
           </nav>
           <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <a
+            href="javascript:void(0);"
+            class="icon"
+            onclick="displayNavigationPage()"
+          >
             <i class="fa fa-bars"></i>
           </a>
         </div>

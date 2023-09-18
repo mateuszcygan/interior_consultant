@@ -1,4 +1,4 @@
-/* Style the navigation menu */
+/* style the navigation menu */
 .topnav {
   overflow: hidden;
   background-color: #181719;
@@ -12,3 +12,22 @@
 .topnav a.icon {
   display: block;
 }
+
+/* grid for mobile naviagtion */
+
+#x::after {
+  grid-area: xbutt;
+  justify-self: end;
+  position: relative;
+  bottom: 15rem;
+  margin-top: 0.875rem;
+}
+
+/* #myLinks {
+  grid-area: navbar;
+}
+
+#navX {
+  display: grid;
+  grid-template: "xbutt" min-content, "navbar" min-content / min-content;
+} */
