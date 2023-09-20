@@ -33,6 +33,32 @@
         <div class="topnav">
           <nav id="navX">
             <ul role="list" id="myLinks">
+              <li>
+                <a aria-current="page" id="home" href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="#">Collection</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a
+            href="javascript:void(0);"
+            class="icon"
+            onclick="displayNavigationPage()"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+
+          <nav id="vertical-nav">
+            <ul role="list" id="vertical-list" style="display: none">
               <div id="x" onclick="displayMobilePage()"></div>
               <li>
                 <a aria-current="page" id="home" href="index.html">Home</a>
@@ -48,14 +74,6 @@
               </li>
             </ul>
           </nav>
-          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-          <a
-            href="javascript:void(0);"
-            class="icon"
-            onclick="displayNavigationPage()"
-          >
-            <i class="fa fa-bars"></i>
-          </a>
         </div>
 
         <div class="description">
@@ -71,7 +89,13 @@
         </div>
 
         <div class="overlap">
-          <img src="photo1.png" alt="interior" width="737px" height="555px" />
+          <img
+            src="photo1.png"
+            class="interior"
+            alt="interior"
+            width="737px"
+            height="555px"
+          />
           <div id="designer">
             <figure>
               <img id="Webber" src="photo2.png" />

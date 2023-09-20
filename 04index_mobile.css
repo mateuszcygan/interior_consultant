@@ -1,33 +1,92 @@
 /* style the navigation menu */
-.topnav {
+/* .topnav {
   overflow: hidden;
   background-color: #181719;
   position: relative;
-}
+} */
 
+/* the horizontal navigation is not displayed */
 .topnav #myLinks {
   display: none;
 }
 
-.topnav a.icon {
+/* .topnav a.icon {
   display: block;
+} */
+
+/* invisible vertical navigation */
+#vertical-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-/* grid for mobile naviagtion */
-
-#x::after {
-  grid-area: xbutt;
-  justify-self: end;
-  position: relative;
-  bottom: 15rem;
-  margin-top: 0.875rem;
+/* adjustement of elements' sizes */
+#title {
+  font-size: 36px;
 }
 
-/* #myLinks {
-  grid-area: navbar;
+#title-description {
+  font-size: 14px;
 }
 
-#navX {
+#readmore {
+  font-size: 14px;
+}
+
+.interior {
+  width: 22rem;
+  height: auto;
+}
+
+#designer {
+  width: 18.75rem;
+  height: 138px;
+}
+
+#Webber {
+  width: 2.28rem;
+  height: auto;
+}
+
+figcaption h3 {
+  font-size: 12px;
+}
+
+#profession {
+  font-size: 10px;
+}
+
+.text {
+  font-size: 18px;
+}
+
+/* grid */
+
+#logo {
+  grid-area: logo;
+}
+
+.icon {
+  grid-area: hamburger;
+}
+
+.description {
+  grid-area: description;
+}
+
+.overlap {
+  grid-area: overlapping;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* .grid-area {
   display: grid;
-  grid-template: "xbutt" min-content, "navbar" min-content / min-content;
+  grid-template-columns: 1fr 1fr;
 } */

@@ -4,7 +4,6 @@ let logo,
   overlapping_area,
   footer,
   navigation_bar,
-  navigation_bar_X,
   X;
 
 let web_elements;
@@ -15,22 +14,21 @@ document.addEventListener("DOMContentLoaded", function () {
   description = document.querySelector(".description");
   overlapping_area = document.querySelector(".overlap");
   footer = document.querySelector(".footer");
-  navigation_bar_X = document.querySelector("#navX");
 
   //elements displayed after clicking hamburger icon
-  navigation_bar = document.querySelector("#myLinks"); // whole navigation bar
-  X = document.getElementById("x");
+  navigation_bar = document.querySelector("#vertical-list");
+  // whole navigation bar that is invisible in bigger page
+  X = document.querySelector("#x");
 
   web_elements = [logo, hamburger_icon, description, overlapping_area, footer];
 });
 
 function displayNavigationPage() {
   if (screen.width <= 500) {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "flex") {
-      x.style.display = "none";
+    if (navigation_bar.style.display === "flex") {
+      navigation_bar.style.display = "none";
     } else {
-      x.style.display = "flex";
+      navigation_bar.style.display = "flex";
     }
 
     let invisible = true;
@@ -48,16 +46,6 @@ function displayNavigationPage() {
       for (let i = 0; i < web_elements.length; i++) {
         web_elements[i].style.display = "none";
       }
-
-      navigation_bar.style.display = "flex";
-      navigation_bar.style.flexDirection = "column";
-      navigation_bar.style.gap = "2rem";
-      navigation_bar.style.height = "100vh";
-      navigation_bar.style.alignItems = "center";
-      navigation_bar.style.flexWrap = "wrap";
-      navigation_bar.style.justifyContent = "center";
-
-      // navigation_bar_X.style.display = "grid";
 
       X.style.display = "initial";
       X.style.alignSelf = "end";
