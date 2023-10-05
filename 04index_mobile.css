@@ -78,6 +78,25 @@ figure #Webber {
   margin-left: 1.2rem;
 }
 
+/* overlapping grid for interior photo and designer card */
+.interior {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+#designer {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+}
+
+.overlap {
+  height: 22rem;
+  width: 22rem;
+  display: grid;
+  grid-template-columns: 2.5rem 19.5rem;
+  grid-template-rows: 13.35rem 8.65rem;
+}
+
 /* grid */
 
 /* #logo {
