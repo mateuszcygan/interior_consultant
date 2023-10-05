@@ -53,9 +53,13 @@
             <i class="fa fa-bars"></i>
           </a>
 
-          <nav id="vertical-nav">
-            <ul role="list" id="vertical-list" style="display: none">
-              <div id="x" onclick="displayMobilePage()"></div>
+          <nav id="vertical-nav" style="display: none">
+            <div class="icon-container">
+              <a class="x-icon" onclick="displayMobilePage()">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </a>
+            </div>
+            <ul role="list" id="vertical-list">
               <li>
                 <a aria-current="page" id="home" href="index.html">Home</a>
               </li>

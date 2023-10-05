@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburger_icon = document.querySelector(".icon");
   description = document.querySelector(".description");
   overlapping_area = document.querySelector(".overlap");
-  footer = document.querySelector(".footer");
+  footer = document.querySelector("footer");
 
   //elements displayed after clicking hamburger icon
-  navigation_bar = document.querySelector("#vertical-list");
+  navigation_bar = document.querySelector("#vertical-nav");
   // whole navigation bar that is invisible in bigger page
   X = document.querySelector("#x");
 
@@ -29,10 +29,12 @@ function displayNavigationPage() {
       navigation_bar.style.display = "none";
     } else {
       navigation_bar.style.display = "flex";
+      navigation_bar.style.alignContent = "center";
     }
 
     let invisible = true;
     for (let i = 0; i < web_elements.length; i++) {
+      console.log(web_elements[i].style.display);
       let elem_display = web_elements[i].style.display === "none";
       invisible = invisible && elem_display;
     }
@@ -46,15 +48,11 @@ function displayNavigationPage() {
       for (let i = 0; i < web_elements.length; i++) {
         web_elements[i].style.display = "none";
       }
-
-      X.style.display = "initial";
-      X.style.alignSelf = "end";
     }
   }
 }
 
 let displayMobilePage = () => {
-  X.style.display = "none";
   navigation_bar.style.display = "none";
   for (let i = 0; i < web_elements.length; i++) {
     web_elements[i].style.display = "initial";

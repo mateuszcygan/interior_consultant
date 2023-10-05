@@ -1,17 +1,11 @@
-/* style the navigation menu */
-/* .topnav {
-  overflow: hidden;
-  background-color: #181719;
-  position: relative;
-} */
-
 /* the horizontal navigation is not displayed */
 .topnav #myLinks {
   display: none;
 }
 
 .topnav {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 /* .topnav a.icon {
@@ -24,6 +18,7 @@
   flex-direction: column;
   gap: 2rem;
   min-height: 100vh;
+  min-width: 100vw;
   justify-content: center;
   align-items: center;
 }
@@ -113,13 +108,14 @@ navX {
   display: grid;
 }
 
+/* size of both icons - hamburger and x */
 .fa {
   font-size: 2rem;
 }
 
 .icon {
   grid-area: hamburger;
-  justify-self: end;
+  align-self: end;
   margin-top: 0.75rem;
   margin-right: 0.7rem;
 }
@@ -159,4 +155,13 @@ navX {
     "description description" min-content
     "overlapping overlapping" min-content
     "footer footer" / 1fr 1fr;
+}
+
+/* adjustment of X positioning (vertical navigation bar) */
+.x-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0.875rem;
+  margin-right: 0.9rem;
 }
