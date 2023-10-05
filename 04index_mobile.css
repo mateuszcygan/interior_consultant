@@ -105,23 +105,46 @@ figure #Webber {
 
 #logo {
   grid-area: logo;
+  justify-self: start;
+  margin: 1.2rem 0rem 0rem 0.75rem;
 }
 
 navX {
   display: grid;
 }
 
+.fa {
+  font-size: 2rem;
+}
+
 .icon {
   grid-area: hamburger;
   justify-self: end;
+  margin-top: 0.75rem;
+  margin-right: 0.7rem;
 }
 
 .description {
+  margin-top: 2.375rem;
+  margin-left: 0.75rem;
   grid-area: description;
+}
+
+#title {
+  margin-bottom: 1.55rem;
+}
+
+#title-description {
+  margin-bottom: 1.55rem;
+}
+
+#readmore {
+  margin-bottom: 2.3rem;
 }
 
 .overlap {
   grid-area: overlapping;
+  justify-self: center;
 }
 
 .footer {

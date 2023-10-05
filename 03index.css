@@ -71,3 +71,8 @@ figcaption h3 {
     "... logo ... navigation ..." min-content
     "... description ... photo ..." min-content / 1fr 30rem 8.7rem 55rem 1fr;
 }
+
+/* hamburger icon not visible on main page */
+.icon {
+  display: none;
+}
