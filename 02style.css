@@ -38,7 +38,7 @@ body {
   min-height: 100vh;
 }
 
-.footer {
+footer {
   justify-self: center;
   color: #a9a9a9;
   font-family: Montserrat;

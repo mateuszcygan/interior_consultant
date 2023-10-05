@@ -10,6 +10,10 @@
   display: none;
 }
 
+.topnav {
+  display: grid;
+}
+
 /* .topnav a.icon {
   display: block;
 } */
@@ -97,14 +101,19 @@ figure #Webber {
   grid-template-rows: 13.35rem 8.65rem;
 }
 
-/* grid */
+/* grid of the main mobile page */
 
-/* #logo {
+#logo {
   grid-area: logo;
+}
+
+navX {
+  display: grid;
 }
 
 .icon {
   grid-area: hamburger;
+  justify-self: end;
 }
 
 .description {
@@ -117,9 +126,14 @@ figure #Webber {
 
 .footer {
   grid-area: footer;
-} */
+}
 
-/* .grid-area {
+.main-content {
+  width: 100vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-} */
+  grid-template:
+    "logo hamburger" min-content
+    "description description" min-content
+    "overlapping overlapping" min-content
+    "footer footer" / 1fr 1fr;
+}
