@@ -64,9 +64,23 @@ figcaption h3 {
   font-size: 18px;
 }
 
+/* rectangular with designer */
+figure #Webber {
+  margin: 0.8rem 0rem 0rem 1.4rem;
+}
+
+#name_profession {
+  margin: 1.05rem 5.25rem 0rem 0.87rem;
+}
+
+.text {
+  margin-top: 1.15rem;
+  margin-left: 1.2rem;
+}
+
 /* grid */
 
-#logo {
+/* #logo {
   grid-area: logo;
 }
 
@@ -84,7 +98,7 @@ figcaption h3 {
 
 .footer {
   grid-area: footer;
-}
+} */
 
 /* .grid-area {
   display: grid;
